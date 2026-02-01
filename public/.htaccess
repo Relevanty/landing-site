@@ -1,0 +1,15 @@
+# SPA fallback на index.html
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  # Отдаём реальные файлы/папки как есть
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+  # Всё остальное — на index.html
+  RewriteRule . /index.html [L]
+</IfModule>
+
+# (опционально) Редирект www -> без www
+# RewriteCond %{HTTP_HOST} ^www\.relevanty\.org$ [NC]
+# RewriteRule ^(.*)$ https://relevanty.org/$1 [R=301,L]

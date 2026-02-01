@@ -1,0 +1,62 @@
+.thin-menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    z-index: 1000;
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+
+.thin-menu-header.scrolled {
+    background-color: #1d2633;
+    height: 5vh;
+}
+
+.thin-menu-header:not(.scrolled) {
+    background-color: transparent;
+    height: 6vh;
+}
+
+.thin-menu-header .center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.thin-menu-header .left,
+.thin-menu-header .right {
+    display: flex;
+    flex: 0 0 auto;
+    padding: 0 0;
+}
+
+.thin-menu-header .logo-image {
+    width: auto;
+    height: 4.5vh;
+    margin-top: 0.2vh;
+    filter: brightness(7) saturate(0);
+    z-index: 1001;
+}
+
+.thin-menu-header .logo-text {
+    font-size: var(--font-size-xl);
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    font-family: "ReneSansCyr", sans-serif;
+    z-index: 1001;
+}
+
+.thin-menu-header:not(.scrolled) .logo-image,
+.thin-menu-header:not(.scrolled) .logo-text {
+    display: none;
+}
+
+.thin-menu-header.scrolled .logo-image,
+.thin-menu-header.scrolled .logo-text {
+    display: block;
+}

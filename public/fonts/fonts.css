@@ -1,0 +1,230 @@
+@font-face {
+  font-family: "ReneSansCyr";
+  src: url("/fonts/ReneSansCyr-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ReneSansCyr";
+  src: url("/fonts/ReneSansCyr-BoldItalic.woff2") format("woff2");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "ReneSansCyr";
+  src: url("/fonts/ReneSansCyr-Demi.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ReneSansCyr";
+  src: url("/fonts/ReneSansCyr-DemiItalic.woff2") format("woff2");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "ReneSansCyr";
+  src: url("/fonts/ReneSansCyr-Heavy.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ReneSansCyr";
+  src: url("/fonts/ReneSansCyr-HeavyItalic.woff2") format("woff2");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "ReneSansCyr";
+  src: url("/fonts/ReneSansCyr-Italic.woff2") format("woff2");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "ReneSansCyr";
+  src: url("/fonts/ReneSansCyr-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ReneSansCyr";
+  src: url("/fonts/ReneSansCyr-LightItalic.woff2") format("woff2");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "ReneSansCyr";
+  src: url("/fonts/ReneSansCyr-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ReneSansCyr";
+  src: url("/fonts/ReneSansCyr-MediumItalic.woff2") format("woff2");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "ReneSansCyr";
+  src: url("/fonts/ReneSansCyr-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ReneSansCyr";
+  src: url("/fonts/ReneSansCyr-Thin.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ReneSansCyr";
+  src: url("/fonts/ReneSansCyr-ThinItalic.woff2") format("woff2");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "ReneSansCyr";
+  src: url("/fonts/ReneSansCyr-UltraLight.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ReneSansCyr";
+  src: url("/fonts/ReneSansCyr-UltraLightIt.woff2") format("woff2");
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "ReneSans";
+  src: url("/fonts/ReneSansLTPro-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ReneSans";
+  src: url("/fonts/ReneSansLTPro-BoldCn.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ReneSans";
+  src: url("/fonts/ReneSansLTPro-BoldCnIt.woff2") format("woff2");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "ReneSans";
+  src: url("/fonts/ReneSansLTPro-Cn.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ReneSans";
+  src: url("/fonts/ReneSansLTPro-CnIt.woff2") format("woff2");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "ReneSans";
+  src: url("/fonts/ReneSansLTPro-Demi.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ReneSans";
+  src: url("/fonts/ReneSansLTPro-DemiCn.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ReneSans";
+  src: url("/fonts/ReneSansLTPro-DemiCnIt.woff2") format("woff2");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "ReneSans";
+  src: url("/fonts/ReneSansLTPro-DemiIt.woff2") format("woff2");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "ReneSans";
+  src: url("/fonts/ReneSansLTPro-HeavyCn.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ReneSans";
+  src: url("/fonts/ReneSansLTPro-HeavyCnIt.woff2") format("woff2");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "ReneSans";
+  src: url("/fonts/ReneSansLTPro-It.woff2") format("woff2");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "ReneSans";
+  src: url("/fonts/ReneSansLTPro-MediumCn.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ReneSans";
+  src: url("/fonts/ReneSansLTPro-MediumCnIt.woff2") format("woff2");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "ReneSans";
+  src: url("/fonts/ReneSansLTPro-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ReneSans";
+  src: url("/fonts/ReneSansLTPro-UltLtCn.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ReneSans";
+  src: url("/fonts/ReneSansLTPro-UltLtCnIt.woff2") format("woff2");
+  font-weight: 200;
+  font-style: italic;
+}

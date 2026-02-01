@@ -1,0 +1,32 @@
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-container .image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out,
+    opacity 0.3s ease-in-out;
+}
+
+.image-container .skeleton {
+    position: absolute;
+    inset: 0;
+    background-color: #e0e0e0; /* Adjust color as needed */
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0%,
+    100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}

@@ -1,0 +1,31 @@
+.principles-section {
+    padding-top: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 60rem;
+    text-align: left;
+}
+
+.principles-section p {
+    font-family: "ReneSansCyr", sans-serif;
+    color: #1d2633;
+    font-size: var(--font-size-m);
+    font-weight: 400;
+    margin-bottom: 0rem;
+}
+
+.principles-section h2 {
+    font-family: "ReneSansCyr", sans-serif;
+    color: #1d2633;
+    font-size: var(--font-size-xxl);
+    font-weight: 600;
+    margin-bottom: 0rem;
+}
+
+.principles-grid {
+    display: flex;
+    width: 100%;
+    align-items: start;
+    flex-direction: column;
+    gap: 0rem;
+}

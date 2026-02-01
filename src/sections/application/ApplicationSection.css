@@ -1,0 +1,98 @@
+.application-section {
+    padding-top: 5rem;
+    padding: 0 5vw;
+    max-width: 70rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.application-section .application-title {
+    font-size: var(--font-size-xxl);
+    margin-bottom: 0.5em;
+    font-family: "ReneSansCyr", sans-serif;
+    color: #333;
+    text-align: left;
+}
+
+.application-section .application-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 4em;
+    font-family: "ReneSansCyr", sans-serif;
+}
+
+.application-section .application-paragraph {
+    flex: 1;
+    text-align: left;
+}
+
+.application-section .application-paragraph p {
+    font-size: var(--font-size-sm);
+    line-height: 1.5;
+    color: #333;
+}
+
+.application-section .application-paragraph p strong {
+    font-weight: 500;
+}
+
+.application-section .application-details {
+    width: 100%;
+    text-align: left;
+}
+
+.application-section .application-details h2 {
+    font-size: var(--font-size-l);
+    margin-top: 1em;
+    font-weight: 600;
+    font-family: "ReneSansCyr", sans-serif;
+    color: #333;
+    text-align: left;
+    position: relative;
+}
+
+.application-section .application-details h2::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    position: absolute;
+    left: 0;
+    bottom: -0.25em;
+}
+
+.application-section .application-details ol,
+.application-section .application-details ul {
+    margin: 0 0;
+    padding-left: 1.5em;
+    font-weight: 400;
+    font-family: "ReneSans", sans-serif;
+}
+
+.application-section .application-details li {
+    font-size: var(--font-size-sm);
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .application-section {
+        padding: 2rem 5vw;
+    }
+
+    .application-section .application-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+    }
+
+    .application-section .application-paragraph {
+        width: 100%;
+        margin-bottom: 1em;
+    }
+}

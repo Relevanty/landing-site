@@ -1,7 +1,7 @@
 // src/lib/clubLinks.ts
 export enum ClubLinks {
   lita = "https://t.me/leramire",
-  olya = "https://t.me/olya_kt",
+  olya = "https://t.me/koooriks",
 }
 
 const LINK_VALUES = Object.values(ClubLinks) as string[]

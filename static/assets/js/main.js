@@ -76,11 +76,11 @@ function setupScrollWatcher() {
 }
 
 function markActiveNav() {
-  const path = window.location.pathname.split("/").pop() || "main.html";
+  const path = window.location.pathname.split("/").pop() || "index.html";
   document.querySelectorAll("a[data-nav]").forEach((a) => {
     const href = a.getAttribute("href") || "";
     const normalized = href.replace(/^\.\//, "");
-    const isActive = (path === "" && normalized === "main.html") || normalized === path || (path === "" && normalized === "");
+    const isActive = (path === "" && normalized === "index.html") || normalized === path || (path === "" && normalized === "");
     if (isActive) a.classList.add("active");
   });
 }

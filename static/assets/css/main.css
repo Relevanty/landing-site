@@ -1484,7 +1484,7 @@ body {
   z-index: 2;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .front-section {
     height: auto;
     min-height: 0;
@@ -2050,7 +2050,7 @@ body {
 }
 
 /* Static multi-page overrides */
-@media (min-width: 769px) {
+@media (min-width: 821px) {
   .wide-menu-header {
     display: flex;
   }
@@ -2059,7 +2059,7 @@ body {
     display: none;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .wide-menu-header {
     display: none;
   }

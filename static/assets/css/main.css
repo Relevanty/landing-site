@@ -531,8 +531,8 @@ body {
 }
 
 .about-us-photo img {
-  width: 90%;
-  aspect-ratio: 1 / 1;
+  width: 96%;
+  /* aspect-ratio: 1 / 1; */
   object-fit: cover;
   border-radius: 6px;
 }

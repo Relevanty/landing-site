@@ -514,7 +514,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 69rem;
+  max-width: 70rem;
   width: 100%;
   padding-top: 4rem;
   padding-left: 1rem;
@@ -788,7 +788,7 @@ body {
   min-height: 100vh;    /* было height: 95vh */
   height: auto;          /* добавить */
   margin-bottom: 0;      /* добавить */
-  background-image: url("../../images/finalwithlogo.png");
+  background-image: url("../../images/final.png");
   background-size: cover;
   background-position: center 75%;
   display: flex;
@@ -809,20 +809,6 @@ body {
   background-color: rgba(0, 0, 0, 0.4);
   z-index: 1;
   pointer-events: none;
-}
-
-.big-footer-section .big-footer-content {
-  color: white;
-  z-index: 2;
-  padding: 0 1em;
-  width: 100%;
-  position: relative;
-}
-
-.big-footer-section .big-footer-content p {
-  color: #bbb;
-  font-size: var(--font-size-xs);
-  font-family: "ReneSans", sans-serif;
 }
 
 .big-footer-section .enroll-section {
@@ -851,16 +837,11 @@ body {
   z-index: 3;
 }
 
-.big-footer-section .contact-details {
-  font-size: var(--font-size-m);
-  font-family: "ReneSansCyr", sans-serif;
-}
-
 .big-footer-section .big-footer-header {
   color: white;
   font-size: var(--font-size-xl);
   font-family: "ReneSansCyr", sans-serif;
-  margin-bottom: 0;
+  margin-bottom: 0.75rem;
   font-weight: 500;
   z-index: 2;
 }
@@ -880,6 +861,26 @@ body {
     width: 90vw;
     min-width: 0px;
   }
+}
+
+.footer-copyright-strip {
+  width: 100%;
+  min-height: 2.5rem;
+  box-sizing: border-box;
+  padding: 0.55rem 1rem;
+  background-color: #ffffff;
+  border-top: 1px solid #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer-copyright-strip p {
+  margin: 0;
+  color: #1d2633;
+  font-size: var(--font-size-xs);
+  font-family: "ReneSans", sans-serif;
 }
 
 .big-footer-logo {
@@ -2026,7 +2027,7 @@ body {
   width: 100%;
   aspect-ratio: 16 / 7;
   object-fit: cover;
-  object-position: center 58%;
+  object-position: center 50%;
   border-radius: 6px;
 }
 

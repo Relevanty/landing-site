@@ -715,13 +715,24 @@ body {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 3rem;
+  align-items: flex-start;
+  column-gap: 3rem;
+  row-gap: 2.5rem;
   margin-top: 2.5rem;
   text-align: left;
 }
 
 .application-section .application-column {
   min-width: 0;
+}
+
+.application-section .application-column p {
+  font-size: 1.05rem;
+  line-height: 1.45;
+}
+
+.application-section .application-column strong {
+  color: #1a4d3e;
 }
 
 .application-section .application-details h2 {
@@ -757,6 +768,22 @@ body {
   font-size: var(--font-size-sm);
   line-height: 1.5;
   color: #333;
+}
+
+.application-section .application-details-photo {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-width: 0;
+}
+
+.application-section .application-details-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
 }
 
 /* Media query for mobile devices */

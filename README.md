@@ -1,19 +1,18 @@
 # Static Site: Relevanty
 
-Этот репозиторий теперь содержит чисто статическую версию сайта, без React/Vite и сборки.
+Репозиторий содержит одностраничную статическую версию сайта без сборки.
 
 ## Структура
 
-- `static/` — готовые страницы (`index.html`, `community.html`, `strategy.html`, `faq.html`, `apply.html`, `contact.html`), общие стили/скрипты (`assets/css/main.css`, `assets/js/main.js`), ассеты (`images/`, `fonts/`), `CNAME`.
-- `.github/workflows/deploy.yml` — деплой на GitHub Pages, берёт содержимое `static/`.
-- `.gitignore` — базовые игноры логов/IDE.
+- `static/index.html` — весь сайт в одном HTML-файле, включая стили, изображения, SEO-мета и счетчики.
+- `static/CNAME` — домен для GitHub Pages.
+- `.github/workflows/deploy.yml` — деплой на GitHub Pages, публикует содержимое `static/`.
 
 ## Запуск локально
 
-- Открыть `static/index.html` в браузере (работает по `file://`).
+- Открыть `static/index.html` в браузере.
 - Или запустить простой сервер в корне репо: `npx serve static` и открыть `http://localhost:3000`.
 
 ## Деплой
 
-- При пуше в `main` GitHub Actions загружает папку `static` и публикует на Pages.
-- Для любого другого хостинга можно просто раздать содержимое `static/` как корень сайта.
+При пуше в ветку `creamVersion` GitHub Actions загружает папку `static` и публикует ее на Pages.

@@ -105,6 +105,10 @@
 
         /* --- шапка: маленький логотип, большое общее фото --- */
         .masthead {
+            /* сколько высоты экрана занимает всё над фото и какой минимум оставляем
+               самому фото; на низких экранах переопределяется в @media (max-height) */
+            --head-space: 470px;
+            --photo-min: 300px;
             padding: 18px 0 8px;
             text-align: center;
         }
@@ -190,7 +194,11 @@
             width: auto;
             max-width: 100%;
             height: auto;
-            max-height: calc(100vh - 470px);
+            /* фото старается влезть в первый экран под логотип и подпись,
+               но при зуме браузера или низком окне 100vh − 470px уходит в ноль
+               и фото пропадает — поэтому жёсткий минимум и svh вместо vh */
+            max-height: calc(100vh - var(--head-space, 470px));
+            max-height: max(var(--photo-min, 300px), calc(100svh - var(--head-space, 470px)));
             border-radius: 20px;
         }
 
@@ -779,6 +787,23 @@
             .m-name { font-size: 1rem; }
             .m-role { font-size: .8rem; }
             footer { padding-bottom: max(48px, env(safe-area-inset-bottom)); }
+        }
+
+        /* низкий экран: зум браузера 150%+, ноутбук с открытой консолью, телефон
+           в ландшафте. логотип на 64vw съедает весь первый экран и выталкивает
+           главное фото за его пределы — ужимаем шапку вместе с запасом --head-space */
+        @media (max-height: 700px) {
+            .masthead { --head-space: 350px; --photo-min: 260px; padding-top: 12px; }
+            .brand-logo { width: min(300px, 48vw); }
+            .hero-caption { font-size: clamp(1.25rem, 3vw, 1.7rem); }
+            .shelf-wrap { margin-top: 26px; }
+        }
+
+        @media (max-height: 560px) {
+            .masthead { --head-space: 230px; --photo-min: 190px; padding-top: 8px; }
+            .brand-logo { width: min(200px, 34vw); }
+            .hero-caption { font-size: clamp(1rem, 2.6vw, 1.3rem); line-height: 1.25; }
+            .shelf-wrap { margin-top: 14px; }
         }
 
         @media print {
